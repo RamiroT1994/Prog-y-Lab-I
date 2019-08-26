@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "ctype.h"
 
 int main()
 {
@@ -23,6 +24,13 @@ int main()
         fflush(stdin);
         scanf("%c",&moneda);
 
+        while((moneda != 'D' && moneda != 'd') && (moneda != 'B' && moneda != 'b') && (moneda != 'P' && moneda != 'p')&& (moneda != 'L' && moneda != 'l'))
+        {
+            printf("ERROR. Reingrese un tipo de moneda valido <D - B - P - L>: ");
+            fflush(stdin);
+            scanf("%c",&moneda);
+        }
+
         printf("\n");
 
         if(flag == 0 && (moneda == 'd' || moneda == 'D'))
@@ -45,7 +53,9 @@ int main()
 
     }
 
-    promPesos = acumPesos/(float)contPesos;
+
+
+    promPesos = (float)acumPesos/contPesos;
 
     if(flag == 0)
     {
