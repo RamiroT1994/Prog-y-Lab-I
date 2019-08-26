@@ -45,7 +45,7 @@ int main()
 
     }
 
-    promPesos = (float)acumPesos/contPesos;
+    promPesos = acumPesos/(float)contPesos;
 
     if(flag == 0)
     {
@@ -63,7 +63,7 @@ int main()
     }
     else
     {
-        printf("Promedio de pesos ingresado: %.2f", promPesos);
+        printf("Promedio de pesos ingresado: %.1f\n", promPesos);
     }
 
     return 0;
