@@ -12,8 +12,14 @@ int main()
     int mayorEnD;
 
     int acumPesos = 0;
-    int contPesos = 0;
     float promPesos;
+
+    int contPesos = 0;
+    int contLibra = 0;
+    int contBitcoin = 0;
+    int contDolares = 0;
+
+    int total;
 
     for(i=0;i<5;i++)
     {
@@ -36,12 +42,14 @@ int main()
         if(flag == 0 && (moneda == 'd' || moneda == 'D'))
         {
             mayorEnD = dinero;
+            contDolares++;
             flag = 1;
         }
 
         else if( (moneda == 'd' || moneda == 'D') && dinero > mayorEnD)
         {
             mayorEnD = dinero;
+            contDolares++;
         }
 
         if(moneda == 'P' || moneda == 'p')
@@ -51,11 +59,21 @@ int main()
             contPesos ++;
         }
 
+        if(moneda == 'L' || moneda == 'l')
+        {
+            contLibra++;
+        }
+        if(moneda == 'B' || moneda == 'b')
+        {
+            contBitcoin++;
+        }
+
     }
 
 
 
     promPesos = (float)acumPesos/contPesos;
+    total = (contPesos * 100) / 5;
 
     if(flag == 0)
     {
@@ -74,7 +92,11 @@ int main()
     else
     {
         printf("Promedio de pesos ingresado: %.1f\n", promPesos);
+        printf("Porcentaje de importes realizados en pesos: %d", total);
     }
+
+
+
 
     return 0;
 }
