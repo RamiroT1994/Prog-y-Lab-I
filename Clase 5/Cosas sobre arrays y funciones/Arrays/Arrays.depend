@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1567426936 source:c:\users\alumno\desktop\arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1567526612 source:d:\tapia\prog-y-lab-i\clase 5\cosas sobre arrays y funciones\arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Vectores.h"
+
+1567526603 source:d:\tapia\prog-y-lab-i\clase 5\cosas sobre arrays y funciones\arrays\vectores.c
+	"Vectores.h"
+
+1567526603 d:\tapia\prog-y-lab-i\clase 5\cosas sobre arrays y funciones\arrays\vectores.h
+
