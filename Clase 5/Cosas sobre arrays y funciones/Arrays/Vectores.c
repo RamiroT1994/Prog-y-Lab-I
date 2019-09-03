@@ -1,4 +1,6 @@
 #include "Vectores.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void cargarVector(int arrayEnteros[],int tam)
 {
@@ -51,4 +53,22 @@ int calcularMaximo(int arrayEnteros[],int tam)
 
     return maximo;
 
+}
+
+void ordenarVector(int arrayEnteros[], int tam)
+{
+    int i,j,aux;
+
+    for(i=0;i<tam-1;i++)
+    {
+        for(j=i+1;j<tam;j++)
+        {
+            if(arrayEnteros[i] > arrayEnteros[j])
+            {
+                aux = arrayEnteros[i];
+                arrayEnteros[i] = arrayEnteros[j];
+                arrayEnteros[j] = aux;
+            }
+        }
+    }
 }
