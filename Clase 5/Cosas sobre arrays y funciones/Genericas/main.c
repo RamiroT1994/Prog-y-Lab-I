@@ -4,10 +4,17 @@
 int main()
 {
     int numero;
+    float numFloat;
+    char caracter;
 
-    numero = myGetInt("Ingrese un valor:","Numero valido","Numero erroneo",0,100);
+    /*numero = myGetInt("Ingrese un valor:","Numero valido","Numero erroneo",0,100);
+    printf("\n\nEl numero ingresado es: %d", numero);*/
 
-    printf("\n\nEl numero ingresado es: %d", numero);
+    /*numFloat = getFloat("Ingrese un flotante:","Numero Valido!","Numero erroneo.",0,10000);
+    printf("\n\nEl numero ingresado es: %.2f",numFloat);*/
+
+    caracter = getChar("Elija una opcion [A][B][C]:","Caracter valido","Caracter Erroneo",65,67);
+    printf("\n\nEl caracter ingresado es: %c",caracter);
 
 
 
