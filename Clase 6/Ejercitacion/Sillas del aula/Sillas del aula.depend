@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1568041215 source:d:\tapia\prog-y-lab-i\clase 6\ejercitacion\sillas del aula\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1568041176 d:\tapia\prog-y-lab-i\clase 6\ejercitacion\sillas del aula\funciones.h
+
+1568041558 source:d:\tapia\prog-y-lab-i\clase 6\ejercitacion\sillas del aula\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
