@@ -9,25 +9,9 @@ int main()
     eAlumno listaDeAlumnos[5];
     eAlumno nuevoAlumno;
     int indice;
-    // eAlumno unAlumno;
-    // eAlumno otroAlumno;
 
-    /*
-        printf("Ingrese nota: ");
-        scanf("%d",&unAlumno.nota);
-        printf("La nota es: %d",unAlumno.nota);
-
-        printf("\n\nIngrese nombre: ");
-        fflush(stdin);
-        gets(unAlumno.nombre);
-        printf("El nombre es: %s",unAlumno.nombre);
-
-        otroAlumno = unAlumno;
-
-        printf("\n\nDatos de 'otroAlumno'\nNota:%d\nNombre:%s\n",otroAlumno.nota,otroAlumno.nombre);
-
-    */
     inicializarAlumnos(listaDeAlumnos,TAM,1);
+    hardcodeAlumnos(listaDeAlumnos,4);
 
     nuevoAlumno.legajo = 999;
     nuevoAlumno.nota = 7;
@@ -37,14 +21,18 @@ int main()
 
     if(indice != -1)
     {
-      listaDeAlumnos[2] = nuevoAlumno;
+      listaDeAlumnos[indice] = nuevoAlumno;
     }
     else
     {
         printf("No hay lugar para cargar");
     }
 
+    printf("\n\n");
     mostrarAlumnos(listaDeAlumnos,TAM);
+
+    printf("Buscar alumno 103");
+    buscarXlegajo(listaDeAlumnos,TAM,103);
 
     return 0;
 }

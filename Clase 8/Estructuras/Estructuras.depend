@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1568640967 source:d:\tapia\prog-y-lab-i\clase 8\estructuras\main.c
+1568644846 source:d:\tapia\prog-y-lab-i\clase 8\estructuras\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Funciones.h"
 
-1568640668 d:\tapia\prog-y-lab-i\clase 8\estructuras\funciones.h
+1568645994 d:\tapia\prog-y-lab-i\clase 8\estructuras\funciones.h
 
-1568640967 source:d:\tapia\prog-y-lab-i\clase 8\estructuras\funciones.c
+1568646073 source:d:\tapia\prog-y-lab-i\clase 8\estructuras\funciones.c
 	<stdio.h>
+	<string.h>
 	"Funciones.h"
 
