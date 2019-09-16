@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "Funciones.h"
 #define TAM 5
 
 int main()
 {
     eAlumno listaDeAlumnos[5];
+    eAlumno nuevoAlumno;
+    int indice;
     // eAlumno unAlumno;
     // eAlumno otroAlumno;
 
@@ -25,7 +28,23 @@ int main()
 
     */
     inicializarAlumnos(listaDeAlumnos,TAM,1);
-    listarAlumnos(listaDeAlumnos,TAM);
+
+    nuevoAlumno.legajo = 999;
+    nuevoAlumno.nota = 7;
+    strcpy(nuevoAlumno.nombre,"Carlos");
+
+    indice = dameElIndiceLibre(listaDeAlumnos,TAM);
+
+    if(indice != -1)
+    {
+      listaDeAlumnos[2] = nuevoAlumno;
+    }
+    else
+    {
+        printf("No hay lugar para cargar");
+    }
+
+    mostrarAlumnos(listaDeAlumnos,TAM);
 
     return 0;
 }

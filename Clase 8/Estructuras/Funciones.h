@@ -8,4 +8,8 @@ typedef struct
 } eAlumno;
 
 void inicializarAlumnos(eAlumno[],int,int);
-void listarAlumnos(eAlumno[],int);
+//void listarAlumnos(eAlumno[],int);
+void mostrarUnAlumno(eAlumno);
+void mostrarAlumnos(eAlumno[],int);
+
+int dameElIndiceLibre(eAlumno[],int);
