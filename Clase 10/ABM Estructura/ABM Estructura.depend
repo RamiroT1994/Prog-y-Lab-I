@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569251343 source:d:\tapia\prog-y-lab-i\clase 10\abm estructura\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
