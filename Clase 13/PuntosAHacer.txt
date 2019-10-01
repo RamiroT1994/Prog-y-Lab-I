@@ -1,0 +1,48 @@
+Alumno
+{
+
+}
+
+Localidad
+{
+
+}
+
+fecha
+{
+
+}
+
+-------------------------------------------------------------------------------------
+
+Inscripcion
+{
+legajo;
+idmateria;
+fechaInscripcion;
+}
+
+Materia
+{
+idmateria;
+descripcion;
+cargahoraria;
+}
+
+------------------------------------------------------------------------------------
+
+1-Hardcode materias;
+2-mostrar materias;
+
+3-Alta inscripcion;
+4-Mostrar inscripciones
+
+
+-------------------------------------------------------------------------------------
+
+5-mostrar inscripciones c/alumno y materia
+6-ingresar una materia c/todos los alumnos
+7-listar cantidad de inscripciones por localidad ()
+8-localidad c/mayor inscripcion a programacion I
+9-Total de horas que estudia un alumno seleccionado
+10-Inscripciones x fecha determinada (ingreso una fecha y veo todas las inscripciones en esa fecha)

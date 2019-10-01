@@ -1,4 +1,7 @@
+#include <conio.h>
 #include "Alumno.h"
+#include "Localidades.h"
+
 
 int buscarLibre(eAlumno listadoDeAlumnos[], int tam)
 {
@@ -53,7 +56,7 @@ void mostrarListadoAlumnos(eAlumno listadoDeAlumnos[], int tam)
 
 void cargarListadoAlumnos(eAlumno listadoDeAlumnos[], int tam)
 {
-    int i;
+    //int i;
     int indice;
 
     indice = buscarLibre(listadoDeAlumnos, tam);
@@ -138,14 +141,14 @@ int buscarAlumnoPorLegajo(eAlumno* listaDeAlumnos, int cant, int legajo)
     if(listaDeAlumnos!=NULL && cant>0)
     {
 
-     for(i=0; i<cant; i++)
-    {
-        if(listaDeAlumnos[i].legajo==legajo && listaDeAlumnos[i].estado==OCUPADO)
+        for(i=0; i<cant; i++)
         {
-            retorno = i;
-            break;
+            if(listaDeAlumnos[i].legajo==legajo && listaDeAlumnos[i].estado==OCUPADO)
+            {
+                retorno = i;
+                break;
+            }
         }
-    }
     }
 
 
@@ -155,7 +158,7 @@ int buscarAlumnoPorLegajo(eAlumno* listaDeAlumnos, int cant, int legajo)
 int modificarAlumno(eAlumno listaDeAlumnos[], int cant, int legajo)
 {
     int index;
-    char nombre[30];
+    //char nombre[30];
     int quePaso = -1;
     char respuesta;
     eAlumno aux;
@@ -187,7 +190,7 @@ int eliminarAlumno(eAlumno listadoDeAlumnos[], int tam)
 {
     int legajo;
     int i;
-    int flag = 0 ;
+   // int flag = 0 ;
     char respuesta;
 
     int quePaso = -1;

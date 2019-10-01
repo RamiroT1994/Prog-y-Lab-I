@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Alumno.h"
+#include "Localidades.h"
 #define A 5
 
 int main()
@@ -26,7 +27,7 @@ int main()
     do
     {
         printf("1.Cargar\n2.Mostrar\n3.Ordenar\n4.Eliminar\n5.Modificar\n7.Salir");
-        printf("Elija una opcion: ");
+        printf("\n\nElija una opcion: ");
         scanf("%d", &opcion);
 
         switch(opcion)
