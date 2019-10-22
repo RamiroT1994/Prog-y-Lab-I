@@ -1,0 +1,36 @@
+-Puntero: Variable que guarda una direccion de memoria. Por lo general la direccion de memoria de OTRA variable. Es una variable como cualquier otra pero en vez de guardar un valor util para el usuario, guarda una dir. de memoria.
+
+-sizeof(); funcion que devuelve la cantidad de bytes que ocupa en memoria un tipo de dato
+
+-Todos los punteros ocupan 4bytes
+
+-Para hacer que un puntero apunte a una variable:
+
+	int x = 10;
+	int* pEentero;
+	pEntero = &x; //Asigne a pEntero, la dir.de memoria de x
+
+-Cuando trabajamos con punteros trabajamos con 3 operadores:
+	1- El operador *, inacceso, para declarar el puntero y para acceder a los datos, es decir para acceder A LO QUE APUNTA el puntero
+
+		printf("%d", *pEntero); // Muestra A LO QUE ESTA APUNTANDO pEntero
+
+	2- el operador &, el operador de direccion, cuando quiero obtener la dir. de memoria de una variable.
+
+
+	3- el operador ->, flecha, es para acceder a campos de una estructura a traves de puntero..
+
+-El NULL indica que un puntero no esta apuntando a nada.
+
+-Al desplazarme a traves de punteros, este dependera de la cantidad de bytes del tipo de dato.
+
+    printf("%d\n",pEntero);	Es lo mismo que pEntero[0]
+    printf("%d\n",pEntero+0);	Es lo mismo que pEntero[0]
+    printf("%d\n",pEntero+1);	Es lo mismo que pEntero[1]
+    printf("%d\n",pEntero+2);	Es lo mismo que pEntero[2]
+    printf("%d\n",pEntero+3);	Es lo mismo que pEntero[3]
+
+
+
+
+
