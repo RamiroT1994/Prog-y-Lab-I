@@ -6,3 +6,50 @@ NOTAS ARCHIVOS:
 -Si guardo en texto el numero 1 son 32 bits. Si lo guardo en binario son 8 bits.
 
 
+FUNCIONES PARA ARCHIVOS:
+
+fopen();
+
+    /*Devuelve un puntero a Char.
+     -Recibe la direccion fisica (las carpetas donde esta el archivo) si no se espcifica el programa va a deducir
+     que el archivo esta en la carpeta del proyecto.
+     Se especifica: D:\\miCarpeta\\miArchivo.txt.
+     -Recibe el modo de apertura.
+    */
+
+fprintf();
+ 	/* Funcion para escribir en formato texto en archivo:
+           -fprintf(); En vez de escribir sobre la consola, lo hace sobre el archivo.
+           Recibe:
+           -puntero archivo
+           -texto que queremos escribir en el archivo
+        */
+
+fclose();
+        /*
+            Funcion para cerrar archivo:
+            -fclose();
+            -Recibe:
+            -puntero a archivo
+        */
+feof();
+	Funcion para leer archivos evitando el corte de \n
+
+fgets(); Lee hasta un \n
+-la variable donde guardo
+-la cantidad de caracteres a leer
+-el archivo
+
+ESCRITURA EN BINARIO:
+fwrite();
+1-Puntero al dato que deseo escribir en un archivo
+2-Sizeof del tipo de dato que va a escrbir
+3-la cantidad de elementos que voy a escribir
+4-el archivo
+
+LECTURA EN BINARO:
+fread();
+1-Puntero al dato a leer
+2-sizeof del tipo de dato a leer
+3- la cantidad de datos a leer
+4- el archivo
