@@ -14,11 +14,10 @@ typedef struct
 int main()
 {
     FILE* pArchivo;
-    int x;
+
     eDato miDato = {100,"Pepe",75};
 
-       pArchivo = fopen("miArchivo", "wb");
-       char miNombre[] = "Ramiro";
+    pArchivo = fopen("miArchivo", "wb");
 
     if(pArchivo != NULL)
     {
