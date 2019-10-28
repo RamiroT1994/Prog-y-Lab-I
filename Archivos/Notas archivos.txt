@@ -1,0 +1,8 @@
+NOTAS ARCHIVOS:
+
+-Funciona para leer datos en disco.
+-Existen distintos tipso de archivos, depende de la tecnologia que usamos. (Nosotros usamos tipos binario y de texto).
+-Todo se guarda en binario en realidad (1 y 0).
+-Si guardo en texto el numero 1 son 32 bits. Si lo guardo en binario son 8 bits.
+
+
